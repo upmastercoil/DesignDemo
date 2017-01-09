@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--When defining a selector in xml, the runtime will try to exit ASAP, therefore start with the specific case first-->
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+
+        <!--The view that will receive the animation has a "setTranslationZ method, so the objectAnimator can
+        modify this property. The translationZ values are of type float and we want to reach 8dp-->
+        <objectAnimator
+            android:duration="@android:integer/config_shortAnimTime"
+            android:propertyName="translationZ"
+            android:valueTo="12dp"
+            android:valueType="floatType" />
+
+    </item>
+
+    <item>
+
+        <objectAnimator
+            android:duration="@android:integer/config_shortAnimTime"
+            android:propertyName="translationZ"
+            android:valueTo="4dp"
+            android:valueType="floatType" />
+
+    </item>
+
+</selector>

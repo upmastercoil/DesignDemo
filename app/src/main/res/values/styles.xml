@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <!--Simple Style-->
+    <style name="MyTextStyle">
+        <item name="android:textColor">@color/faded_black</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--Custom Theme-->
+    <style name="MyTextTheme" parent="AppTheme">
+        <item name="android:textColor">@color/faded_black</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="MyAppBarExpanded" parent="Base.TextAppearance.AppCompat.Inverse">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="MyNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+</resources>
